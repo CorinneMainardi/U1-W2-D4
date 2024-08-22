@@ -67,12 +67,12 @@ console.log(boundary());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function epify(string = "ciao") {
-  if (string != "epicode") {
-    const string2 = string.concat(" epicode");
-    return string2;
-  } else {
+function epify(string) {
+  if (string.toUpperCase.startsWith("EPICODE")) {
     return string;
+  } else {
+    const string2 = string.toUpperCase.concat("EPICODE");
+    return string2;
   }
 }
 console.log(epify());
