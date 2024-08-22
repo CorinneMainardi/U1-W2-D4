@@ -67,11 +67,11 @@ console.log(boundary());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function epify(string) {
-  if (string.toUpperCase.startsWith("EPICODE")) {
+function epify(string = "ciao") {
+  if (string.toUpperCase().startsWith("EPICODE")) {
     return string;
   } else {
-    const string2 = string.toUpperCase.concat("EPICODE");
+    const string2 = "EPICODE " + string.toUpperCase();
     return string2;
   }
 }
@@ -130,7 +130,7 @@ console.log(upperFirst());
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function cutString(string = "vorrei andare al mare") {
-  string2 = string.slice(1, -1);
+  let string2 = string.slice(1, -1);
   return string2;
 }
 console.log(cutString());
